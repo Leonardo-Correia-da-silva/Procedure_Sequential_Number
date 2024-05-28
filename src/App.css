@@ -1,38 +1,141 @@
-.App {
-  text-align: center;
+.App{
+    margin-top: 5rem;
+    
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  .div-logo {
+    display: flex;  
+    justify-content: center;
+  
   }
-}
+  
+  header {
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    
+  }
+  
+  .logo1{
+    max-width: 100%; 
+    width: 4rem;
+  
+    
+  }
+  
+  .logo2 {
+    max-width: 100%; 
+    width: 13rem;
+    
+  
+  }
+  
+  .titulo{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgba(0, 0, 0, 0.76);
+  }
+  
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.principal {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100vh;   
+  margin-top: 7rem;        
+      
 }
 
-.App-link {
-  color: #61dafb;
+.img-proced-1 {
+  max-width: 90%; 
+  justify-content: center;
+  margin-left: 5rem;
+  margin-top: 2rem;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+h3{
+  margin-left: 5rem;
+  margin-top: 8rem;
+  color: rgba(3, 121, 3, 0.726);
+}
+
+p{
+  margin-left: 5rem;
+  margin-top: -15px;
+  color: rgba(34, 36, 34, 0.87);
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    
+  .App{
+      margin-top: -10rem;
   }
-  to {
-    transform: rotate(360deg);
+  .div-logo {
+    flex-direction: column;
+    margin-top: 12rem;
+    
+  }
+
+  header {
+    flex-direction: column;
+  }
+
+  .titulo{
+    font-size: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .logo1 {
+    width: 4rem;
+    margin-right: 12rem;
+  }
+
+  .logo2{
+    width: 15rem;
+    margin-left: 12rem;
+    margin-top: -6rem;
+  }
+  .img-proced-1 {
+    margin-left: 0;
+    margin-top: 1rem;
+    max-width: 100%;
+    justify-content: center;
+  }
+
+  h3, p {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+
+  h3 {
+    margin-top: 7rem;
+  }
+
+  .logo1 {
+    width: 4rem;
+    margin-right: 8rem;
+    margin-top: 2rem;
+  }
+
+  .logo2{
+    width: 13rem;
+    margin-left: 8rem;
+    margin-top: -5rem;
+  }
+
+  .img-proced-1 {
+    margin-left: 0;
+    margin-top: 1rem;
+    max-width: 100%;
+    justify-content: center;
   }
 }
