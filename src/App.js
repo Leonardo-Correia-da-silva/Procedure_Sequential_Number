@@ -88,7 +88,7 @@ function App() {
 
 
             <h3>HISTÓRICO DE FATURAMENTO</h3>
-            <p>&bull;Nesta área podemos ver os pedidos que já foram faturados, neste caso o pedido que faturamos está no histórico.S (conforme imagem a seguir):</p>
+            <p>&bull;Nesta área podemos ver os pedidos que já foram faturados, neste caso está o pedido que faturamos! (conforme imagem a seguir):</p>
             <img className='img-proced-1' src={proced11} />
 
 
