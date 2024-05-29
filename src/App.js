@@ -1,9 +1,7 @@
 
 import './App.css';
 import login from '../src/img-sequencial/Login.png';
-import proced0 from '../src/img-sequencial/proced0.png';
 import proced1 from '../src/img-sequencial/proced1.png';
-import proced2 from '../src/img-sequencial/proced2.png';
 import proced3 from '../src/img-sequencial/proced3.png';
 import proced4 from '../src/img-sequencial/proced4.png';
 import proced5 from '../src/img-sequencial/proced5.png';
@@ -38,15 +36,15 @@ function App() {
 
 
             <h3>BUSCANDO ITENS QUE AINDA NÃO FORAM FATURADOS</h3>
-            <p>&bull; Selecione o filtro "todos" e aperte em "pesquisar" e em seguida selecione o ícone "pesquisar" (binóculo), para que os itens sejam tragos<br />
+            <p>&bull; Selecione o filtro "todos" e abaixo selecione o ícone "pesquisar" (binóculo), para que os itens sejam tragos<br />
                &bull; Em seguida, selecione o pedido que deseja faturar, e clique em "Faturar" <br />
-               &bull; Aparecerá a mensagem de "Número sequencial diferente do último", mostrando qual o último número registrado, e perguntando se deseja continuar, pois como no exemplo o número sequencial está 5820 <br />
-               &bull; Selecione o item "Não" (conforme imagem a seguir):</p>
+               &bull; Aparecerá a mensagem de "Número sequencial diferente do último", mostrando qual o último número registrado, e perguntando se deseja continuar, pois como no exemplo o número sequencial está como 5820 <br />
+               &bull; Selecione a opção "Não" (conforme imagem a seguir):</p>
             <img className='img-proced-1' src={proced4} />
 
 
             <h3> CAMINHO PARA ACERTAR O NÚMERO SEQUENCIAL</h3>
-            <p>&bull; Entre na area de "cadastro / Principal / Tipo de produto (conforme imagem a seguir):</p>
+            <p>&bull; Entre na area de "cadastro / Principal / Tipo de Documento (conforme imagem a seguir):</p>
             <img className='img-proced-1' src={proced5} />
 
             
