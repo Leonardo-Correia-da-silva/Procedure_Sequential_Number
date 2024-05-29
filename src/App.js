@@ -1,4 +1,3 @@
-
 import './App.css';
 import login from '../src/img-sequencial/Login.png';
 import proced1 from '../src/img-sequencial/proced1.png';
@@ -15,83 +14,81 @@ import logo1 from '../src/img-sequencial/favicon.ico';
 import logo2 from '../src/img-sequencial/logo-NFe.png';
 
 
+
+
 function App() {
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    };
+
     return (
         <div className="App">
+            <header className='div-logo'>
+                <img className='logo1' src={logo1} alt="Logo 1" />
+                <img className='logo2' src={logo2} alt="Logo 2" />
+                <h1 className='titulo'>Sequencial do Tipo de Documento no Faturamento</h1>
+            </header>
 
-        <header className='div-logo'>
-          <img className='logo1' src={logo1} />
-          <img className='logo2' src={logo2} />
-          <h1 className='titulo'>Sequencial do Tipo de Documento no Faturamento</h1>
-        </header>
+            <button className='button' onClick={scrollToTop}>Voltar ao Início</button>
 
             <h3>ENTRAR NO SISTEMA E FAZER LOGIN</h3>
             <p>&bull; Entre no sistema ERP Client, faça o login com seu usuário e senha, clique em "ok" para ser direcionado ao ambiente do sistema! (conforme imagem a seguir):</p>
-            <img className='img-proced-1' src={login} />
-
+            <img className='img-proced-1' src={login} alt="Login" />
 
             <h3>PROCESSO DE FATURAMENTO</h3>
             <p>&bull; Entre na area "Gestão de Vendas / Faturamento / Faturar" (conforme imagem a seguir):</p>
-            <img className='img-proced-1' src={proced3} />
-
+            <img className='img-proced-1' src={proced3} alt="Procedimento 3" />
 
             <h3>BUSCANDO ITENS QUE AINDA NÃO FORAM FATURADOS</h3>
             <p>&bull; Selecione o filtro "todos" e abaixo selecione o ícone "pesquisar" (binóculo), para que os itens sejam tragos<br />
-               &bull; Em seguida, selecione o pedido que deseja faturar, e clique em "Faturar" <br />
-               &bull; Aparecerá a mensagem de "Número sequencial diferente do último", mostrando qual o último número registrado, e perguntando se deseja continuar, pois como no exemplo o número sequencial está como 5820 <br />
-               &bull; Selecione a opção "Não" (conforme imagem a seguir):</p>
-            <img className='img-proced-1' src={proced4} />
-
+                &bull; Em seguida, selecione o pedido que deseja faturar, e clique em "Faturar" <br />
+                &bull; Aparecerá a mensagem de "Número sequencial diferente do último", mostrando qual o último número registrado, e perguntando se deseja continuar, pois como no exemplo o número sequencial está como 5820 <br />
+                &bull; Selecione a opção "Não" (conforme imagem a seguir):</p>
+            <img className='img-proced-1' src={proced4} alt="Procedimento 4" />
 
             <h3> CAMINHO PARA ACERTAR O NÚMERO SEQUENCIAL</h3>
             <p>&bull; Entre na area de "cadastro / Principal / Tipo de Documento (conforme imagem a seguir):</p>
-            <img className='img-proced-1' src={proced5} />
+            <img className='img-proced-1' src={proced5} alt="Procedimento 5" />
 
-            
             <h3> BUSCANDO NOTA FISCAL PARA ALTERAÇÃO DO NÚMERO SEQUENCIAL</h3>
             <p>&bull; Selecione o item "Todos" e em seguida selecione o ícone (binóculo) ao lado para pesquisar <br />
-               &bull; Precione 2x com o botão esquerdo do mouse em "Nota fiscal" (conforme imagem a seguir):</p>
-            <img className='img-proced-1' src={proced1} />
-
+                &bull; Precione 2x com o botão esquerdo do mouse em "Nota fiscal" (conforme imagem a seguir):</p>
+            <img className='img-proced-1' src={proced1} alt="Procedimento 1" />
 
             <h3>ALTERANDO O NÚMERO SEQUENCIAL "ERRADO" PARA O "CORRETO"</h3>
-            "<p>&bull; Como podemos ver no canto direito, o número sequencial está "5820", e precisa ser "5817", conforme a mensagem de aviso nos mostrou <br />
-               &bull; Para alterarmos esse sequencia, selecione os ícones "F2-Alterar / Lápis", e na parte sequencial, inserir o novo número indicado pela mensagem e apertar o "Enter no teclado"  (neste exemplo foi o número correto é o "5817")</p>
-            <img className='img-proced-1' src={proced6} />
- 
+            <p>&bull; Como podemos ver no canto direito, o número sequencial está "5820", e precisa ser "5817", conforme a mensagem de aviso nos mostrou <br />
+                &bull; Para alterarmos esse sequencia, selecione os ícones "F2-Alterar / Lápis", e na parte sequencial, inserir o novo número indicado pela mensagem e apertar o "Enter no teclado"  (neste exemplo foi o número correto é o "5817")</p>
+            <img className='img-proced-1' src={proced6} alt="Procedimento 6" />
 
             <h3>NÚMERO SEQUENCIAL JÁ ALTERADO </h3>
             <p>&bull; Como podemos ver, o número foi alterado conforme mensagem de aviso nos mostrou. (conforme imagem a seguir):</p>
-            <img className='img-proced-1' src={proced7} />
-
+            <img className='img-proced-1' src={proced7} alt="Procedimento 7" />
 
             <h3>SALVANDO AS ALTERAÇÕES</h3>
             <p>&bull; Para salvar as alterações feitas, selecione o ícone "salvar" no canto direito, e selecione o ícone "salvar" na parte superior (conforme imagem a seguir):</p>
-            <img className='img-proced-1' src={proced8} />
+            <img className='img-proced-1' src={proced8} alt="Procedimento 8" />
 
-
-            <h3>VOLTANDO  PARA A ÁREA DE FATURAMENTO</h3>
+            <h3>VOLTANDO PARA A ÁREA DE FATURAMENTO</h3>
             <p>&bull; Entre na area "Gestão de Vendas / Faturamento / Faturar" (conforme imagem a seguir):</p>
-            <img className='img-proced-1' src={proced3} />
-
+            <img className='img-proced-1' src={proced3} alt="Procedimento 3" />
 
             <h3>FINALIZANDO O FATURAMENTO COM O NÚMERO SEQUENCIAL CORRETO</h3>
             <p>&bull; Por fim para finalizarmos, selecione novamente o pedido que deseja faturar, e em seguida aperte em "Faturar" (conforme imagem a seguir):</p>
-            <img className='img-proced-1' src={proced9} />
-
+            <img className='img-proced-1' src={proced9} alt="Procedimento 9" />
 
             <h3>PEDIDO JÁ FATURADO</h3>
             <p>&bull; Vemos que o pedido agora foi faturado corretamente, com o número do sequencial correto! (conforme imagem a seguir):</p>
-            <img className='img-proced-1' src={proced10} />
-
+            <img className='img-proced-1' src={proced10} alt="Procedimento 10" />
 
             <h3>HISTÓRICO DE FATURAMENTO</h3>
             <p>&bull;Nesta área podemos ver os pedidos que já foram faturados, neste caso está o pedido que faturamos! (conforme imagem a seguir):</p>
-            <img className='img-proced-1' src={proced11} />
-
-
-
+            <img className='img-proced-1' src={proced11} alt="Procedimento 11" />
         </div>
     )
 };
+
 export default App;
+
